@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator event</title>
+    <script>
+        function test()
+        {
+           var input=document.getElementById("input").value;
+           document.getElementById("output").value=input;
+        }
+    </script>
+</head>
+<body style="margin-top: 100px;">
+    
+    <center>
+        <!--heading-->
+        <h1>Calculator</h1>
+        <!--input-->
+        <input type="text" id="input" onkeypress="test()" placeholder="input"><br><br>
+        <!--output-->
+        <input type="text" id="output"  placeholder="output"><br>
+    </center>
+
+</body>
+</html>
